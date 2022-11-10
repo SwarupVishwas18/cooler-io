@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 2rem;
+    background-color: #0a0a0a67;
+    color: #e5dada;
+}
+
+
+main{
+    background-color: #0a0a0a;
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+main div{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article{
+    font-weight: bold;
+}
+
+p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.copy-success{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    top: 20vh;
+    font-size: 3rem;
+    color: aliceblue;
+    animation-name: copy;
+    animation-duration: 2s;
+    display: none;
+}
+
+.copy-text{
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 2rem 5rem;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+li{
+    cursor: pointer;
+}
+
+ul.mob-links{
+    display: none;
+}
+
+.gen, .filter{
+    color: #0a0a0a;
+    background-color: #e5dada;
+    padding: .3rem .6rem;
+    border-radius: 8px;
+    transition: all ease-in-out 500ms;
+}
+
+.gen:hover, .filter:hover{
+    background-color: #0a0a0a;
+    color: #e5dada;
+}
+
+ul:first-child{
+    color: #0a0a0a;
+    background-color: #e5dada;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    ul.mob-links{
+        display: flex;
+    }
+
+    .links{
+        display: none;
+    }
+
+    header{
+        position: initial;
+        background-color: #0a0a0a;
+    }
+
+    
+.copy-success{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    top: 20vh;
+    font-size: 2rem;
+    color: aliceblue;
+    animation-name: copy;
+    animation-duration: 2s;
+    display: none;
+}
+
+.copy-text{
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 2rem 3rem;
+    font-weight: bold;
+}
+
+}
+
+@keyframes copy {
+    from{
+        transform: translateY(-10rem);
+    }
+    to{
+        transform: translateY(0rem);
+    }
+}
