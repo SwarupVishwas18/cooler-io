@@ -1,6 +1,7 @@
 # cooler-io
 Color Palette Generator in Vanilla Javascript
 
+## Live Link : https://swarupvishwas18.github.io/cooler-io/
 
 ## Screen Shots
 
